@@ -1,6 +1,7 @@
 package com.nashtechglobal
 package model
 
+// Represents an order for a pizza with various details.
 case class PizzaOrder( orderId: Option[String],
                        pizzaType: String,
                        pizzaCategory: String,
