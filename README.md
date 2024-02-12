@@ -4,18 +4,19 @@
 1. **Open a terminal** and **connect to postgres DB** by the below commands.     
      ```sh 
    sudo -i -u postgres;       
-   ```   
-     ![Screenshot from 2024-02-05 12-58-42.png](..%2F..%2F..%2FPictures%2FScreenshot%20from%202024-02-05%2012-58-42.png)
- 
+   ```         
+   ![Screenshot from 2024-02-12 17-57-24](https://github.com/PradyumanKnoldus/sample_microservice/assets/124979629/c7274a2c-5c73-4590-9066-fdf6269cc965)
+        
 
-2. **Create a database PizzaHutDB.**        
+3. **Create a database PizzaHutDB.**        
     ```sh 
    CREATE DATABASE PizzaHutDB;       
-   ```      
-   ![Screenshot from 2024-02-05 13-00-34.png](..%2F..%2F..%2FPictures%2FScreenshot%20from%202024-02-05%2013-00-34.png)
+   ```        
+   ![Screenshot from 2024-02-12 17-57-40](https://github.com/PradyumanKnoldus/sample_microservice/assets/124979629/8cbbd882-9950-48e0-a717-a079956e29e9)
+         
 
 
-3. **Connect to PizzaHutDB** and **Create a table UserInfo.**
+4. **Connect to PizzaHutDB** and **Create a table UserInfo.**
     ```sh 
    \c PizzaHutDB 
    ```
@@ -36,11 +37,12 @@
       pincode BIGINT,
       country VARCHAR(50)
     );
-    ```       
-   ![Screenshot from 2024-02-05 13-10-02.png](..%2F..%2F..%2FPictures%2FScreenshot%20from%202024-02-05%2013-10-02.png)
-  
+    ```             
+    ![Screenshot from 2024-02-12 17-57-49](https://github.com/PradyumanKnoldus/sample_microservice/assets/124979629/8dab4ec1-39be-43ed-acf0-6de87b5fe5eb)
 
-4. In **resources/postgres.conf** file **_change the username and password_** (Enter your username and password)
+         
+
+5. In **resources/postgres.conf** file **_change the username and password_** (Enter your username and password)
    ```sh
        postgres {
        url = "jdbc:postgresql://localhost:5432/pizzahutdb"
@@ -53,7 +55,7 @@
    ```
    
 
-5. **Now Run** the **UserAPI scala class** it will generate the userAPI to create, read, update, delete the users.    
+6. **Now Run** the **UserAPI scala class** it will generate the userAPI to create, read, update, delete the users.    
    Below are the **list of user API.**
     - **create user:** http://localhost:8081/api/create-user
     - **get all users:** http://localhost:8081/api/get-all-users
@@ -64,7 +66,7 @@
     - **update user fields(multiple fields):** http://localhost:8081/api/update-user-fields
 
 
-6. **Open Postman** and select your **choice(post, get, delete, patch)** and **enter the above url** as per your choice and **hit send button.**  
+7. **Open Postman** and select your **choice(post, get, delete, patch)** and **enter the above url** as per your choice and **hit send button.**  
     **Sample Data to Create User:**
     ```sh
    { 
@@ -84,5 +86,5 @@
       "country": "INDIA"
    }
    ```
-   **Example:**      
-   ![Screenshot from 2024-02-05 19-47-44.png](..%2F..%2F..%2FPictures%2FScreenshot%20from%202024-02-05%2019-47-44.png)
+   **Example:**               
+   ![Screenshot from 2024-02-12 17-58-00](https://github.com/PradyumanKnoldus/sample_microservice/assets/124979629/7032b984-5b6e-4c4c-ac5e-e293bf2db985)
