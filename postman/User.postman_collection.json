@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "6825c16c-534e-4719-b0c2",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Methods",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"get-all-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By ID",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"get-user-by-id",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New User",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							},
+							"raw": "{\n \"userId\": 101,\n \"userName\": \"Manish01\",\n \"password\": \"122233@Ram\",\n \"firstName\": \"Manish\",\n \"lastName\": \"Mishra\",\n \"gender\": \"Male\",\n \"dob\": \"14/03/2001\",\n \"email\": \"manish.mishra1@nashtechglobal.com\",\n \"phoneNumber\": 9898787876,\n \"address\": \"Near Ram-eesh International\",\n \"city\": \"Greater Noida\",\n \"state\": \"Uttar Pradesh\",\n \"pinCode\": 201306,\n \"country\": \"INDIA\" \n}"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By ID",
+					"request": {
+						"method": "DELETE",
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"delete-user-by-id",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All User",
+					"request": {
+						"method": "DELETE",
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"delete-all-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update UserName By ID",
+					"request": {
+						"method": "PATCH",
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"update-user-name",
+								"{{id}}",
+								"{{username}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User By ID",
+					"request": {
+						"method": "PATCH",
+						"body": {
+							"mode": "raw",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							},
+							"raw": "{\n \"userId\": 101,\n \"userName\": \"Manish01\",\n \"password\": \"122233@Ram\",\n \"firstName\": \"Manish\",\n \"lastName\": \"Mishra\",\n \"gender\": \"Male\",\n \"dob\": \"14/03/2001\",\n \"email\": \"manish.mishra1@nashtechglobal.com\",\n \"phoneNumber\": 9898787876,\n \"address\": \"Near Ram-eesh International\",\n \"city\": \"Greater Noida\",\n \"state\": \"Uttar Pradesh\",\n \"pinCode\": 201306,\n \"country\": \"INDIA\" \n}"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}{{path}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"update-user-fields",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	]
+}
