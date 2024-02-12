@@ -88,3 +88,6 @@
    ```
    **Example:**               
    ![Screenshot from 2024-02-12 17-58-00](https://github.com/PradyumanKnoldus/sample_microservice/assets/124979629/7032b984-5b6e-4c4c-ac5e-e293bf2db985)
+
+
+8. **You can also import the Postman directory to the Postman Application & From the top-right select User Local Environment from Environment option**. It contains all the API that is written above. You have to only change the data as per your need.
